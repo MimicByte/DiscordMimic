@@ -6,3 +6,6 @@ user=""
 password=""
 host=""
 port=""
+
+[extensions]
+enabled = []

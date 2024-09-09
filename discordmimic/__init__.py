@@ -1,7 +1,7 @@
 from discordmimic.core import DiscordMimic
-from discordmimic.module import Module
+from discordmimic.mimicextension import MimicExtension
 
 __all__ = [
     "DiscordMimic",
-    "Module",
+    "MimicExtension",
 ]

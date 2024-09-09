@@ -1,6 +1,7 @@
 import logging
+import glob
 
-from discordmimic.module import Module
+from discordmimic.mimicextension import MimicExtension
 from interactions import (
     Client,
     Intents,
@@ -54,11 +55,15 @@ class DiscordMimic(Client):
             **kwargs,
         )
 
-        self.config = None
+        self.config = config
         self.database = None
-        self.extensions = Module()
+        self.extensions = None
 
     @listen()
     async def on_ready(self):
         print("Ready")
         print(f"This bot is owned by {self.owner}")
+
+        enabled_extensions = self.config["extensions"].get("enabled", [])
+        for extension in enabled_extensions:
+            self.load_extension("discordmimic.data.extensions." + extension)
