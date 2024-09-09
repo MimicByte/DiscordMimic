@@ -1,7 +1,5 @@
 import logging
-import glob
 
-from discordmimic.mimicextension import MimicExtension
 from interactions import (
     Client,
     Intents,
