@@ -56,6 +56,7 @@ class DiscordMimic(Client):
         self.config = config
         self.database = None
         self.extensions = None
+        self.storage = "discordmimic/data/storage/"
 
     @listen()
     async def on_ready(self):

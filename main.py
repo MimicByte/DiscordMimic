@@ -21,13 +21,11 @@ def main():
     if not os.path.exists("discordmimic/data/extensions"):
         os.makedirs("discordmimic/data/extensions")
 
+    if not os.path.exists("discordmimic/data/storage"):
+        os.makedirs("discordmimic/data/storage")
+
     with open("discordmimic/data/config.toml", "rb") as config_file:
         config = tomllib.load(config_file)
-
-    print(os.listdir())
-    print(os.listdir("discordmimic"))
-    print(os.listdir("discordmimic/data"))
-    print(os.listdir("discordmimic/data/extensions"))
 
     extension_requirements = glob.glob("discordmimic/data/extensions/**/*.txt")
     print("Files Found: ", extension_requirements)
