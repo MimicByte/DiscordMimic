@@ -1,2 +1,2 @@
 aiohttp==3.9.5
-interactions.py==5.12.1
+interactions.py @ git+https://github.com/interactions-py/interactions.py.git@unstable
