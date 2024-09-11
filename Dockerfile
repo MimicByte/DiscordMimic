@@ -37,7 +37,7 @@ COPY . .
 # into this layer.
 RUN apt-get update && \
     apt-get upgrade -y && \
-    apt-get install -y git
+    apt-get install -y git ffmpeg libffi-dev libnacl-dev
 
 RUN --mount=type=cache,target=/root/.cache/pip \
     --mount=type=bind,source=requirements.txt,target=requirements.txt \
