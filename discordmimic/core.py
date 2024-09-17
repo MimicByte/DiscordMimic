@@ -2,7 +2,6 @@ import logging
 
 from interactions import (
     Client,
-    Intents,
     listen,
     MISSING,
 )
@@ -14,8 +13,8 @@ class DiscordMimic(Client):
         cls_log = logging.getLogger(__name__)
         cls_log.setLevel(logging.DEBUG)
 
-        intents = Intents.DEFAULT
-        intents._value_ = config["discord"]["intents"]
+        if not config["discord"]["intents"]:
+            raise ValueError("Intents must be provided in the config file")
 
         super().__init__(
             *args,
@@ -30,7 +29,7 @@ class DiscordMimic(Client):
                 "enforce_interaction_perms", True
             ),
             fetch_members=config["discord"].get("fetch_members", False),
-            intents=intents,
+            intents=config["discord"]["intents"],
             logger=cls_log,
             logging_level=config["discord"].get("logging_level", logging.INFO),
             send_command_tracebacks=config["discord"].get(
