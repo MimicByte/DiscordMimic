@@ -1,2 +1,2 @@
 aiohttp==3.9.5
-interactions.py[voice]==5.13.2
+interactions.py[voice]==5.14.0
