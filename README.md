@@ -13,6 +13,8 @@ A flexible, extensible Discord bot framework built on [interactions.py](https://
 
 ## 🚀 Quick Start
 
+> **New to Discord bots?** Check out [QUICKSTART.md](QUICKSTART.md) for a complete step-by-step guide!
+
 ### Prerequisites
 
 - Python 3.12 or higher
@@ -115,11 +117,12 @@ We welcome contributions! Whether you're fixing bugs, adding features, or improv
 
 ## 📖 Learning Path
 
-1. **Start Here**: Read [CONTRIBUTING.md](CONTRIBUTING.md) for a complete newcomer guide
-2. **Create Your First Extension**: Follow the tutorial in the contributing guide
-3. **Explore the Architecture**: Read [ARCHITECTURE.md](ARCHITECTURE.md) to understand the design
-4. **Learn interactions.py**: Check out the [official documentation](https://interactions-py.github.io/interactions.py/)
-5. **Build Something Cool**: Create your own extensions and share them!
+1. **Absolute Beginner?** Start with [QUICKSTART.md](QUICKSTART.md) for a 5-minute setup guide
+2. **Want to Contribute?** Read [CONTRIBUTING.md](CONTRIBUTING.md) for a complete newcomer guide
+3. **Create Your First Extension**: Follow the tutorial in the contributing guide
+4. **Explore the Architecture**: Read [ARCHITECTURE.md](ARCHITECTURE.md) to understand the design
+5. **Learn interactions.py**: Check out the [official documentation](https://interactions-py.github.io/interactions.py/)
+6. **Build Something Cool**: Create your own extensions and share them!
 
 ## 📋 Requirements
 
